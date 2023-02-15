@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: "Bahnschrift Light";
+  font-size: medium;
+}
+
+header {
+  background-image: linear-gradient(to bottom right, rgb(153, 45, 185), rgb(105, 89, 252));
+  padding: 80px;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+}
+
+nav {
+  float: inline-start;
+  vertical-align: middle;
+  height: 20px; 
+  background: rgb(178, 17, 241);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  padding: 20px;
+  background-color: rgb(160, 150, 255);
+  height: viewpoint-length;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: rgb(178, 17, 241);
+  padding: 10px;
+  color: white;
+  height: 350px;
+}
+
+.image1 {
+  float: left;
+  height: 80px;
+  width: 80px;
+}
+
+.image3 {
+  float: right;
+  height:fit-content;
+  width: 330px;
+}
+
+img {
+  max-width: 100%;
+  height: auto
+  }
+  
+
+a[href]{
+  color: white;
+  font-size: 17px;
+  padding-left: 50px;
+}
+
+a[href]:visited {
+color: rgb(160, 150, 255);
+}
+
+a[href]:hover {
+  color:rgb(160, 150, 255)
+}
+
+
+.facts {
+  margin-left: 50px;
+}
+
+.categories {
+  float: right;
+  width: 25%;
+  background-color: rgb(178, 17, 241);
+  height: auto;
+}
+.contacts {
+  float: left;
+  margin-left: 30px;
+  width: 40%;
+  background-color: rgb(178, 17, 241);
+  height: auto;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+
+#ddln1 {
+    color: #df0b0b;
+}
+
+#ddln2 {
+    color: #df0b0b;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .image3 {
+   width: 100%;
+  }
+
+  *{
+    padding: 0%;
+    margin: 0%;
+  }
+  header {
+    text-align: center;
+    font-size: medium;
+    color: white;
+    padding: 5%;
+  }
+
+  nav {
+    float: inline-start;
+    vertical-align: middle;
+    height: 4em; 
+    background: rgb(178, 17, 241);
+    padding: 2%;
+  }
+
+  body {
+    font-size: small;
+  }
+
+  a[href]{
+    font-size: smaller;
+    padding-left: 1%;
+  }
+
+  .contacts {
+    width: 100%;
+  }
+
+  .categories {
+    width: 50%;
+    background-color: rgb(178, 17, 241);
+    height: auto;
+    float: right;
+  }
+
+  .quick_links {
+    float: left;
+    padding-left: 10%;
+    width: 50%;
+  }
+
+  footer {
+    height: 37em;
+  }
+}
